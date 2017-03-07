@@ -26,23 +26,64 @@
 <h1>Edit Contact</h1>
 
 <form method="POST" action="/update.php">
-  <input type="hidden" name="id" id="task_id" value="<?= $contact['id']; ?>" />
+  <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
 
   <div class="wrapper">
-
-    <div class="form-group">
-      <label for="contact_name">First Name</label>
-      <input class="form-control" type="text" name="name" id="firstname" value="<?= $contact['fname']; ?>" />
+    <div class="row">
+      <div class="form-group" id="edit-name">
+      <div class="col-md-2 nopadding-left">
+        <label for="title">Title</label>
+        <input class="form-control" type="text" name="title" id="title" value="<?= $contact['title']; ?>" />
+      </div>
+      <div class="col-md-5 nopadding-left">
+        <label for="firstname">First Name</label>
+        <input class="form-control" type="text" name="firstname" id="firstname" value="<?= $contact['fname']; ?>" />
+      </div>
+      <div class="col-md-5 nopadding">
+        <label for="lastname">Last Name</label>
+        <input class="form-control" type="text" name="lastname" id="lastname" value="<?= $contact['lname']; ?>" />
+      </div>
+      </div>
     </div>
 
-    <div class="form-group">
-      <label for="contact_name">Last Name</label>
-      <input class="form-control" type="text" name="name" id="lastname" value="<?= $contact['lname']; ?>" />
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group" id="edit-address">
+          <label for="address">Address</label>
+          <input class="form-control" name="address" id="address" value="<?= $contact['address']; ?>" />
+        </div>
+      </div>
     </div>
 
-    <div class="form-group">
-      <label for="contact_phone">Phone Number</label>
-      <input class="form-control" name="phone" id="phone" value="<?= $contact['phone']; ?>" />
+    <div class="row">
+      <div class="form-group" id="edit-name">
+      <div class="col-md-7 nopadding-left">
+        <label for="city">City</label>
+        <input class="form-control" type="text" name="city" id="city" value="<?= $contact['city']; ?>" />
+      </div>
+      <div class="col-md-2 nopadding-left">
+        <label for="state">State</label>
+        <input class="form-control" type="text" name="state" id="state" value="<?= $contact['state']; ?>" />
+      </div>
+      <div class="col-md-3 nopadding">
+        <label for="zip">Zipcode</label>
+        <input class="form-control" type="text" name="zip" id="zip" value="<?= $contact['zip']; ?>" />
+      </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group" id="edit-phone">
+        <label for="phone">Phone Number</label>
+        <input class="form-control" name="phone" id="phone" value="<?= $contact['phone']; ?>" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group">
+        <label for="notes">Notes</label>
+        <textarea class="form-control" name="notes" id="notes" value="<?= $contact['notes']; ?>"></textarea>
+      </div>
     </div>
 
     <button class="btn btn-primary">Save Contact</button>

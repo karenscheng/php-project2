@@ -10,6 +10,7 @@ body {
   height: 90vh;
   width: 70vw;
   padding: 5px 25px;
+  overflow: scroll;
 }
 
 h1{
@@ -34,4 +35,25 @@ td img{
 
 .btn-add {
   margin-top: 22px;
+}
+
+.nopadding {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nopadding-left {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.nopadding-right {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#edit-address, #edit-phone {
+  margin-top: 15px;
 }

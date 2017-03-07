@@ -6,13 +6,13 @@ $stmt = $db->prepare('UPDATE contacts SET fname = :fname, lname = :lname, title 
 //$stmt->bindParam
 $stmt->execute(array(
   ':id' => $_POST['id'],
-  ':fname' => $_POST['fnam'],
-  ':lname' => $_POST['lname'],
+  ':fname' => $_POST['firstname'],
+  ':lname' => $_POST['lastname'],
   ':title' => $_POST['title'],
   ':address' => $_POST['address']
-  ':city' => $_POST['phone'],
-  ':state' => $_POST['phone'],
-  ':zip' => $_POST['phone'],
+  ':city' => $_POST['city'],
+  ':state' => $_POST['state'],
+  ':zip' => $_POST['zip'],
   ':phone' => $_POST['phone'],
   ':notes' => $_POST['notes'],
 ));
