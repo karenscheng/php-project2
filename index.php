@@ -15,6 +15,7 @@
     <th>City</th>
     <th>State</th>
     <th>Notes</th>
+    <th> </th>
   </thead>
   <tbody>
     <?php foreach($contacts as $contact) : ?>
@@ -26,6 +27,7 @@
       <td><?= $contact['city']; ?></td>
       <td><?= $contact['state']; ?></td>
       <td><?= $contact['notes']; ?></td>
+      <td class="edit"><a href="/edit.php?id=<?= $contact['id']; ?>"><img src="images/edit.png" /></a></td>
     </tr>
   <?php endforeach; ?>
   </tbody>
