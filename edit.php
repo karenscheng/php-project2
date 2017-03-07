@@ -33,6 +33,9 @@
     <div class="form-group">
       <label for="contact_name">First Name</label>
       <input class="form-control" type="text" name="name" id="firstname" value="<?= $contact['fname']; ?>" />
+    </div>
+
+    <div class="form-group">
       <label for="contact_name">Last Name</label>
       <input class="form-control" type="text" name="name" id="lastname" value="<?= $contact['lname']; ?>" />
     </div>
