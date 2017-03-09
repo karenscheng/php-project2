@@ -36,7 +36,7 @@
       <td><?= $contact['state']; ?></td>
       <td><?= $contact['phone']; ?></td>
       <td class="edit"><a href="/edit.php?id=<?= $contact['id']; ?>"><img src="images/edit.png" /></a></td>
-      <td class="delete"><a href="/delete.php?id=<?= $contact['id']; ?>"><img src="images/delete.png" /></a></td>
+      <td class="delete"><a href="/delete.php?id=<?= $contact['id']; ?>" onClick="return confirm('Are you sure you want to delete this contact?')"><img src="images/delete.png" /></a></td>
     </tr>
   <?php endforeach; ?>
   </tbody>
