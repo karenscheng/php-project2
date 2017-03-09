@@ -58,6 +58,10 @@ td img{
   padding-bottom: 15px;
 }
 
+.fullheight {
+  height: 100%;
+}
+
 #edit-address, #edit-phone {
   margin-top: 15px;
 }

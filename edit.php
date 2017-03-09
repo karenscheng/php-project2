@@ -23,7 +23,15 @@
 </div>
 <?php endif; ?>
 
-<h1 class="padding-below">Edit Contact</h1>
+<div class="row padding-below">
+  <div class="col-md-2"></div> <!-- helps with centering h1 -->
+  <div class="col-md-8">
+    <h1>Edit Contact</h1>
+  </div>
+  <div class="col-md-2">
+    <a href="/delete.php?id=<?= $contact['id']; ?>" onClick="return confirm('Are you sure you want to delete this contact?')" class="btn btn-danger btn-delete">Delete Contact</a>
+  </div>
+</div>
 
 <form method="POST" action="/update.php">
   <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
