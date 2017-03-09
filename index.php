@@ -5,8 +5,15 @@
 
 ?>
 
-<a href="/new.php" class="btn btn-success pull-right btn-add">+ Add Contact</a>
-<h1>All Contacts <span class="text-muted">(<?= count($contacts); ?>)</span></h1>
+<div class="row">
+  <div class="col-md-2"></div> <!-- helps with centering h1 -->
+  <div class="col-md-8">
+    <h1>All Contacts <span class="text-muted">(<?= count($contacts); ?>)</span></h1>
+  </div>
+  <div class="col-md-2">
+    <a href="/new.php" class="btn btn-success btn-add">+ Add Contact</a>
+  </div>
+</div>
 
 <table class="table table-hover">
   <thead>

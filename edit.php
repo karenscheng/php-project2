@@ -23,7 +23,7 @@
 </div>
 <?php endif; ?>
 
-<h1>Edit Contact</h1>
+<h1 id="padding-below">Edit Contact</h1>
 
 <form method="POST" action="/update.php">
   <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
@@ -36,12 +36,12 @@
         <input class="form-control" type="text" name="title" id="title" value="<?= $contact['title']; ?>" />
       </div>
       <div class="col-md-5 nopadding-left">
-        <label for="firstname">First Name</label>
-        <input class="form-control" type="text" name="firstname" id="firstname" value="<?= $contact['fname']; ?>" />
+        <label for="fname">First Name</label>
+        <input class="form-control" type="text" name="fname" id="fname" value="<?= $contact['fname']; ?>" />
       </div>
       <div class="col-md-5 nopadding">
-        <label for="lastname">Last Name</label>
-        <input class="form-control" type="text" name="lastname" id="lastname" value="<?= $contact['lname']; ?>" />
+        <label for="lname">Last Name</label>
+        <input class="form-control" type="text" name="lname" id="lname" value="<?= $contact['lname']; ?>" />
       </div>
       </div>
     </div>
@@ -82,7 +82,7 @@
     <div class="row">
       <div class="form-group">
         <label for="notes">Notes</label>
-        <textarea class="form-control" name="notes" id="notes" value="<?= $contact['notes']; ?>"></textarea>
+        <textarea class="form-control" name="notes" id="notes"><?= $contact['notes']; ?></textarea>
       </div>
     </div>
 
