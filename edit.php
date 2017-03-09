@@ -23,7 +23,7 @@
 </div>
 <?php endif; ?>
 
-<h1 id="padding-below">Edit Contact</h1>
+<h1 class="padding-below">Edit Contact</h1>
 
 <form method="POST" action="/update.php">
   <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />

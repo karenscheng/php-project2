@@ -54,10 +54,14 @@ td img{
   padding-right: 0;
 }
 
-#padding-below {
+.padding-below {
   padding-bottom: 15px;
 }
 
 #edit-address, #edit-phone {
   margin-top: 15px;
+}
+
+td.edit, td.delete {
+  width: 38px;
 }

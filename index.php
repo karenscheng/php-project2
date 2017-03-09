@@ -15,18 +15,15 @@
   </div>
 </div>
 
-<table class="table table-hover">
+<table class="table table-responsive table-hover">
   <thead>
     <th>ID</th>
     <th>First Name</th>
     <th>Last Name</th>
-    <!-- <th>Title</th> -->
-    <!-- <th>Address</th> -->
     <th>City</th>
     <th>State</th>
-    <!-- <th>Zip</th> -->
     <th>Phone</th>
-    <!-- <th>Notes</th> -->
+    <th> </th>
     <th> </th>
   </thead>
   <tbody>
@@ -35,14 +32,11 @@
       <td><?= $contact['id']; ?></td>
       <td><?= $contact['fname']; ?></td>
       <td><?= $contact['lname']; ?></td>
-      <!-- <td><?= $contact['title']; ?></td> -->
-      <!-- <td><?= $contact['address']; ?></td> -->
       <td><?= $contact['city']; ?></td>
       <td><?= $contact['state']; ?></td>
-      <!-- <td><?= $contact['zip']; ?></td> -->
       <td><?= $contact['phone']; ?></td>
-      <!-- <td><?= $contact['notes']; ?></td> -->
       <td class="edit"><a href="/edit.php?id=<?= $contact['id']; ?>"><img src="images/edit.png" /></a></td>
+      <td class="delete"><a href="/delete.php?id=<?= $contact['id']; ?>"><img src="images/delete.png" /></a></td>
     </tr>
   <?php endforeach; ?>
   </tbody>
