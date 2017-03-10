@@ -8,10 +8,10 @@
 <div class="row">
   <div class="col-md-2 hidden-xs"></div> <!-- helps with centering h1 -->
   <div class="col-md-8 col-xs-12">
-    <h1>All Contacts <span class="text-muted hidden-xs">(<?= count($contacts); ?>)</span></h1>
+    <h1>Contact Manager</h1>
   </div>
   <div class="col-md-2 col-xs-12 flex padding-below">
-    <a href="/new.php" class="btn btn-success btn-add">+ Add Contact</a>
+    <a href="/new.php" class="btn btn-primary btn-add">+ Add Contact</a>
   </div>
 </div>
 
@@ -20,24 +20,24 @@
     <div class="table-responsive">
       <table class="table table-hover">
         <thead>
-          <th>ID</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>City</th>
-          <th>State</th>
-          <th>Phone</th>
+          <th><h2>ID</h2></th>
+          <th><h2>First Name</h2></th>
+          <th><h2>Last Name</h2></th>
+          <th><h2>City</h2></th>
+          <th><h2>State</h2></th>
+          <th><h2>Phone</h2></th>
           <th> </th>
           <th> </th>
         </thead>
         <tbody>
           <?php foreach($contacts as $contact) : ?>
           <tr>
-            <td><?= $contact['id']; ?></td>
-            <td><?= $contact['fname']; ?></td>
-            <td><?= $contact['lname']; ?></td>
-            <td><?= $contact['city']; ?></td>
-            <td><?= $contact['state']; ?></td>
-            <td><?= $contact['phone']; ?></td>
+            <td><h4><?= $contact['id']; ?></h4></td>
+            <td><h4><?= $contact['fname']; ?></h4></td>
+            <td><h4><?= $contact['lname']; ?></h4></td>
+            <td><h4><?= $contact['city']; ?></h4></td>
+            <td><h4><?= $contact['state']; ?></h4></td>
+            <td><h4><?= $contact['phone']; ?></h4></td>
             <td class="edit"><a href="/edit.php?id=<?= $contact['id']; ?>"><img src="images/edit.png" /></a></td>
             <td class="delete"><a href="/delete.php?id=<?= $contact['id']; ?>" onClick="return confirm('Are you sure you want to delete this contact?')"><img src="images/delete.png" /></a></td>
           </tr>
