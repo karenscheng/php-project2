@@ -1,23 +1,18 @@
 <?php
 
   include 'header.php';
-  $contacts = $db->query('SELECT * FROM contacts')->fetchAll(PDO::FETCH_ASSOC);
 
+  $sortlname = array_key_exists('sort', $_GET) ? $_GET['sort'] : null;
+  $sortfname = array_key_exists('sort', $_GET) ? $_GET['sort'] : null;
+
+  if ($sortlname !== null) {
+    $contacts = $db->query('SELECT * FROM contacts ORDER BY lname ' . $sortlname)->fetchAll(PDO::FETCH_ASSOC);
+  } else if ($sortfname !== null) {
+    $contacts = $db->query('SELECT * FROM contacts ORDER BY fname ' . $sortfname)->fetchAll(PDO::FETCH_ASSOC);
+  } else {
+    $contacts = $db->query('SELECT * FROM contacts')->fetchAll(PDO::FETCH_ASSOC);
+  }
 ?>
-
-<?php if (array_key_exists('updated', $_GET)) : ?>
-<div class="alert alert-success">
-  <!-- reads POST from update, alerts success if contact updates -->
-  <p><strong>Update successful!</strong>. Your contact was updated.</p>
-</div>
-<?php endif; ?>
-
-<?php if (array_key_exists('created', $_GET)) : ?>
-<div class="alert alert-info">
-  <!-- reads POST from create, alerts success if contact is created -->
-  <p><strong>Contact created!</strong> Your contact was successfully created.</p>
-</div>
-<?php endif; ?>
 
 <div class="row top-panel">
   <div class="col-md-2 hidden-xs"></div> <!-- helps with centering h1 -->
@@ -35,8 +30,8 @@
       <table class="table table-hover">
         <thead>
           <th><h2>ID</h2></th>
-          <th><h2>First Name</h2></th>
-          <th><h2>Last Name</h2></th>
+          <th><a href="/index.php?sort=<?= ($sortfname === null || $sortfname === 'desc') ? 'asc' : 'desc'; ?>"><h2>First Name</h2></th>
+          <th><a href="/index.php?sort=<?= ($sortlname === null || $sortlname === 'desc') ? 'asc' : 'desc'; ?>"><h2>Last Name</h2></a></th>
           <th><h2>City</h2></th>
           <th><h2>State</h2></th>
           <th><h2>Phone</h2></th>
@@ -61,5 +56,27 @@
     </div>
   </div>
 </div>
+
+<?php if (array_key_exists('updated', $_GET)) : ?>
+  <div class="row">
+    <div class="col-md-12 col-xs-12 center">
+      <div class="btn btn-lg">
+        <!-- reads POST from update, alerts success if contact updates -->
+        <p><strong>Update successful!</strong> Your contact was updated.</p>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>
+
+<?php if (array_key_exists('created', $_GET)) : ?>
+  <div class="row">
+    <div class="col-md-12 col-xs-12 center">
+      <div class="btn btn-lg">
+        <!-- reads POST from create, alerts success if contact is created -->
+        <p><strong>Contact created!</strong> Your contact was successfully created.</p>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>
 
 <?php include 'footer.php'; ?>

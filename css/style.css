@@ -13,7 +13,7 @@ body {
 }
 
 .container::-webkit-scrollbar {
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;*/
 }
 
 .container::-webkit-scrollbar:vertical {
