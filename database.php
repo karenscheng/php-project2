@@ -1,5 +1,5 @@
 <?php
-
+// should be included when doing db work
   error_reporting(E_ALL);
 
   if (!ini_get('display_errors')) {
