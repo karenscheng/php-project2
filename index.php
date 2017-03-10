@@ -10,7 +10,7 @@
   <div class="col-md-8 col-xs-12">
     <h1>All Contacts <span class="text-muted hidden-xs">(<?= count($contacts); ?>)</span></h1>
   </div>
-  <div class="col-md-2 col-xs-12">
+  <div class="col-md-2 col-xs-12 flex padding-below">
     <a href="/new.php" class="btn btn-success btn-add">+ Add Contact</a>
   </div>
 </div>

@@ -11,15 +11,15 @@
   <div class="wrapper">
     <div class="row">
       <div class="form-group" id="edit-name">
-      <div class="col-md-2 nopadding-left">
+      <div class="col-md-2 col-xs-12 nopadding-left">
         <label for="title">Title</label>
         <input class="form-control" type="text" name="title" id="title" value="" placeholder="Title" />
       </div>
-      <div class="col-md-5 nopadding-left">
+      <div class="col-md-5 col-xs-12 nopadding-left">
         <label for="fname">First Name</label>
         <input class="form-control" type="text" name="fname" id="fname" value="" placeholder="First Name"/>
       </div>
-      <div class="col-md-5 nopadding">
+      <div class="col-md-5 col-xs-12 nopadding">
         <label for="lname">Last Name</label>
         <input class="form-control" type="text" name="lname" id="lname" value=""  placeholder="Last Name"/>
       </div>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 col-xs-12">
         <div class="form-group" id="edit-address">
           <label for="address">Address</label>
           <input class="form-control" name="address" id="address" value="" placeholder="Address"/>
@@ -37,15 +37,15 @@
 
     <div class="row">
       <div class="form-group" id="edit-name">
-      <div class="col-md-7 nopadding-left">
+      <div class="col-md-7 col-xs-12 nopadding-left">
         <label for="city">City</label>
         <input class="form-control" type="text" name="city" id="city" value="" placeholder="City"/>
       </div>
-      <div class="col-md-2 nopadding-left">
+      <div class="col-md-2 col-xs-12 nopadding-left">
         <label for="state">State</label>
         <input class="form-control" type="text" name="state" id="state" value="" placeholder="State" />
       </div>
-      <div class="col-md-3 nopadding">
+      <div class="col-md-3 col-xs-12 nopadding">
         <label for="zip">Zipcode</label>
         <input class="form-control" type="text" name="zip" id="zip" value="" placeholder="Zipcode"/>
       </div>
@@ -66,7 +66,7 @@
       </div>
     </div>
 
-    <button class="btn btn-primary">Create New Contact</button>
+    <button class="btn margin-top btn-primary">Create New Contact</button>
   </div>
 
 <?php include 'footer.php'; ?>

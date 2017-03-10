@@ -24,11 +24,11 @@
 <?php endif; ?>
 
 <div class="row">
-  <div class="col-md-4 hidden-xs"></div> <!-- helps with centering h1 -->
-  <div class="col-md-4 col-xs-12 flex">
+  <div class="col-md-4 col-s-2 hidden-xs"></div> <!-- helps with centering h1 -->
+  <div class="col-md-4 col-s-10 col-xs-12 flex">
     <h1>Edit Contact</h1>
   </div>
-  <div class="col-md-4 col-xs-12 flex left">
+  <div class="col-md-4 col-s-2 col-xs-12 flex left">
     <a href="/delete.php?id=<?= $contact['id']; ?>" onClick="return confirm('Are you sure you want to delete this contact?')" class="btn btn-danger btn-delete">Delete</a>
   </div>
 </div>
@@ -39,15 +39,15 @@
   <div class="wrapper">
     <div class="row padding-top">
       <div class="form-group" id="edit-name">
-      <div class="col-md-2 col-xs-2 nopadding-left">
+      <div class="col-md-2 col-xs-12 nopadding-left">
         <label for="title">Title</label>
         <input class="form-control" type="text" name="title" id="title" value="<?= $contact['title']; ?>" />
       </div>
-      <div class="col-md-5 col-xs-5 nopadding-left">
+      <div class="col-md-5 col-xs-12 nopadding-left">
         <label for="fname">First Name</label>
         <input class="form-control" type="text" name="fname" id="fname" value="<?= $contact['fname']; ?>" />
       </div>
-      <div class="col-md-5 col-xs-5 nopadding">
+      <div class="col-md-5 col-xs-12 nopadding">
         <label for="lname">Last Name</label>
         <input class="form-control" type="text" name="lname" id="lname" value="<?= $contact['lname']; ?>" />
       </div>
@@ -69,11 +69,11 @@
         <label for="city">City</label>
         <input class="form-control" type="text" name="city" id="city" value="<?= $contact['city']; ?>" />
       </div>
-      <div class="col-md-2 col-xs-4 nopadding-left">
+      <div class="col-md-2 col-xs-12 nopadding-left">
         <label for="state">State</label>
         <input class="form-control" type="text" name="state" id="state" value="<?= $contact['state']; ?>" />
       </div>
-      <div class="col-md-3 col-xs-8 nopadding">
+      <div class="col-md-3 col-xs-12 nopadding">
         <label for="zip">Zipcode</label>
         <input class="form-control" type="text" name="zip" id="zip" value="<?= $contact['zip']; ?>" />
       </div>

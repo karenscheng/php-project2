@@ -82,7 +82,6 @@ td.edit, td.delete {
 .flex {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -103,10 +102,39 @@ td.edit, td.delete {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
+  display: flex;
   flex-wrap: wrap;
 }
-.row > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
+
+@media only screen
+  and (min-device-width: 668px)
+  and (max-device-width: 1045px) {
+
+  .left {
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+}
+
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  .left {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nopadding-left {
+    padding: 0;
+  }
+
 }
