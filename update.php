@@ -10,7 +10,7 @@ $stmt->execute(array(
   ':fname' => $_POST['fname'],
   ':lname' => $_POST['lname'],
   ':title' => $_POST['title'],
-  ':address' => $_POST['address']
+  ':address' => $_POST['address'],
   ':city' => $_POST['city'],
   ':state' => $_POST['state'],
   ':zip' => $_POST['zip'],
@@ -18,4 +18,4 @@ $stmt->execute(array(
   ':notes' => $_POST['notes']
 ));
 
-header('Location: http://localhost:8080/edit.php?updated=true&id=' . $_POST['id']);
+header('Location: http://localhost:8080/index.php?updated=true&id=' . $_POST['id']);

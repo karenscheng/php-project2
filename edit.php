@@ -11,22 +11,10 @@
 
 ?>
 
-<?php if (array_key_exists('updated', $_GET)) : ?>
-<div class="alert alert-success">
-  <!-- reads POST from update, alerts success if contact updates -->
-  <p><strong>Update successful!</strong>. Your contact was updated.</p>
-</div>
-<?php endif; ?>
-
-<?php if (array_key_exists('created', $_GET)) : ?>
-<div class="alert alert-info">
-  <!-- reads POST from create, alerts success if contact is created -->
-  <p><strong>Contact created!</strong> Your contact was successfully created.</p>
-</div>
-<?php endif; ?>
-
 <div class="row top-panel">
-  <div class="col-md-4 col-s-2 hidden-xs"></div> <!-- helps with centering h1 -->
+  <div class="col-md-4 col-xs-12">
+    <a href="/index.php" class="btn btn-sm" id="more-top">Return Home</a>
+  </div>
   <div class="col-md-4 col-s-10 col-xs-12 flex">
     <h1>Edit Contact</h1>
   </div>
