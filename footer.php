@@ -5,13 +5,13 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 col-xs-12">
+      <div class="col-md-4 col-xs-5 nopadding">
         <a href="/styleguide.html"><h4>Style Guide</h4></a>
       </div>
-      <div class="col-md-4 col-xs-12">
+      <div class="col-md-4 col-xs-3">
         <a href="https://github.com/karenscheng" target="_newtab"><h4>Github</h4></a>
       </div>
-      <div class="col-md-4 col-xs-12">
+      <div class="col-md-4 col-xs-4">
         <a href="http://karenscheng.com/" target="_newtab"><h4>Portfolio</h4></a>
       </div>
     </div>

@@ -350,4 +350,16 @@ td.edit img, td.delete img {
     padding: 0;
   }
 
+  .padding-phone {
+    padding-top: 10px;
+  }
+
+  .margin-bottom-phone {
+    margin-bottom: 10px;
+  }
+
+  .top-panel {
+    margin-left: -24px;
+  }
+
 }

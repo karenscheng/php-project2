@@ -19,7 +19,7 @@
     <h1>Edit Contact</h1>
   </div>
   <div class="col-md-4 col-s-2 col-xs-12 flex left">
-    <a href="/delete.php?id=<?= $contact['id']; ?>" onClick="return confirm('Are you sure you want to delete this contact?')" class="btn btn-sm btn-delete">Delete</a>
+    <a href="/delete.php?id=<?= $contact['id']; ?>" onClick="return confirm('Are you sure you want to delete this contact?')" class="btn btn-sm btn-delete margin-bottom-phone">Delete</a>
   </div>
 </div>
 
