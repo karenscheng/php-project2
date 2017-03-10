@@ -31,6 +31,7 @@ td img{
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: scroll;
 }
 
 .btn-add {
@@ -58,6 +59,14 @@ td img{
   padding-bottom: 15px;
 }
 
+.padding-top {
+  padding-top: 10px;
+}
+
+.margin-top {
+  margin-top: 15px;
+}
+
 .fullheight {
   height: 100%;
 }
@@ -68,4 +77,36 @@ td img{
 
 td.edit, td.delete {
   width: 38px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  align-items: flex-start;
+  /*justify-content: flex-end;*/
+}
+
+.form-group {
+  margin-bottom: 0px;
+}
+
+.table {
+  padding-top: 10px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
 }
