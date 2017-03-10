@@ -13,8 +13,93 @@ body {
   overflow: scroll;
 }
 
-h1{
+h1 {
   text-align: center;
+  color: #313975;
+  font-family: 'Yrsa', serif;
+}
+
+h4 {
+  font-family: 'Source Sans Pro', serif;
+  margin-bottom: 0;
+  color: #080E3B;
+}
+
+p {
+  font-family: 'Source Sans Pro', serif;
+  color: #E6E8FC;
+  margin-bottom: 0;
+}
+
+.flex-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.colors {
+  display: flex;
+}
+
+.square{
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.primary{
+  background-color: #313975;
+}
+
+.primary1{
+  background-color: #080E3B;
+}
+
+.primary2{
+  background-color: #535A92;
+}
+
+.secondary{
+  background-color: #482E74;
+}
+
+.secondary1{
+  background-color: #2D1557;
+}
+
+.secondary2{
+  background-color: #674F91;
+}
+
+.white1{
+  background-color: #D8D9DF;
+}
+
+.white2{
+  background-color: #E6E8FC;
+}
+
+.white3{
+  background-color: #E6E8FC;
+}
+
+.gray1{
+  background-color: #8A8B91;
+}
+
+.gray2{
+  background-color: #8B8890;
+}
+
+.gray3{
+  background-color: #686A79;
+}
+
+.gray-text{
+  color: #686A79;
 }
 
 td img{

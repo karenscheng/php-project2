@@ -1,5 +1,10 @@
   </div>
   </div>
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+      <a href="/styleguide.html">Style Guide</a>
+    </div>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
