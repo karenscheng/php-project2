@@ -5,7 +5,7 @@
 
 ?>
 
-<div class="row">
+<div class="row top-panel">
   <div class="col-md-2 hidden-xs"></div> <!-- helps with centering h1 -->
   <div class="col-md-8 col-xs-12">
     <h1>Contact Manager</h1>
@@ -32,12 +32,12 @@
         <tbody>
           <?php foreach($contacts as $contact) : ?>
           <tr>
-            <td><h4><?= $contact['id']; ?></h4></td>
-            <td><h4><?= $contact['fname']; ?></h4></td>
-            <td><h4><?= $contact['lname']; ?></h4></td>
-            <td><h4><?= $contact['city']; ?></h4></td>
-            <td><h4><?= $contact['state']; ?></h4></td>
-            <td><h4><?= $contact['phone']; ?></h4></td>
+            <td><a href="/edit.php?id=<?= $contact['id']; ?>"><h4><?= $contact['id']; ?></h4></a></td>
+            <td><a href="/edit.php?id=<?= $contact['id']; ?>"><h4><?= $contact['fname']; ?></h4></a></td>
+            <td><a href="/edit.php?id=<?= $contact['id']; ?>"><h4><?= $contact['lname']; ?></h4></a></td>
+            <td><a href="/edit.php?id=<?= $contact['id']; ?>"><h4><?= $contact['city']; ?></h4></a></td>
+            <td><a href="/edit.php?id=<?= $contact['id']; ?>"><h4><?= $contact['state']; ?></h4></a></td>
+            <td><a href="/edit.php?id=<?= $contact['id']; ?>"><h4><?= $contact['phone']; ?></h4></a></td>
             <td class="edit"><a href="/edit.php?id=<?= $contact['id']; ?>"><img src="images/edit.png" /></a></td>
             <td class="delete"><a href="/delete.php?id=<?= $contact['id']; ?>" onClick="return confirm('Are you sure you want to delete this contact?')"><img src="images/delete.png" /></a></td>
           </tr>

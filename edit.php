@@ -23,7 +23,7 @@
 </div>
 <?php endif; ?>
 
-<div class="row">
+<div class="row top-panel">
   <div class="col-md-4 col-s-2 hidden-xs"></div> <!-- helps with centering h1 -->
   <div class="col-md-4 col-s-10 col-xs-12 flex">
     <h1>Edit Contact</h1>

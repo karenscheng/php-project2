@@ -4,7 +4,16 @@
 
 ?>
 
-<h1 class="padding-below">Create New Contact</h1>
+<div class="row top-panel">
+  <div class="col-md-2 col-xs-12">
+    <a href="/index.php" class="btn btn-sm" id="more-top">Return Home</a>
+  </div>
+  <div class="col-md-8 col-xs-12">
+    <h1 class="padding-below">Create New Contact</h1>
+  </div>
+  <div class="col-md-2 hidden-xs"></div>
+</div>
+
 
 <form method="POST" action="/create.php">
 
